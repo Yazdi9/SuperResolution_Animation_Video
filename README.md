@@ -6,11 +6,6 @@
 > [Tencent ARC Lab](https://arc.tencent.com/en/index); Platform Technologies, Tencent Online Video
 
 
-### :triangular_flag_on_post: Updates
-* **2022.11.28**: release codes&models.
-* **2022.08.29**: release AVC-Train and AVC-Test.
-
-
 ## Web Demo and API
 
 [![Replicate](https://replicate.com/cjwbw/animesr/badge)](https://replicate.com/cjwbw/animesr) 
@@ -21,7 +16,32 @@ https://user-images.githubusercontent.com/11482921/204205018-d69e2e51-fbdc-4766-
 
 https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-8b43-bb479b42dfb6.mp4
 
+## Video Frames Demos(Left:Low Resolution Video Frame  Right:Super Resolution[Desired Output])
 
+<div align=center>
+<img  src="inputs/inputimages/Screenshot (3835).png" width="400" height="320">
+<img  src="outputs/outimage/Screenshot (3845).png" width="400" height="320"> 
+</div> 
+
+<div align=center>
+<img  src="inputs/inputimages/Screenshot (3834).png" width="400" height="320">
+<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+</div> 
+
+<div align=center>
+<img  src="inputs/inputimages/Screenshot (3837).png" width="400" height="320">
+<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+</div> 
+
+<div align=center>
+<img  src="inputs/inputimages/Screenshot (3828).png" width="400" height="320">
+<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+</div>
+
+<div align=center>
+<img  src="inputs/inputimages/Screenshot (3831).png" width="400" height="320">
+<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+</div>
 
 ## :wrench: Dependencies and Installation
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
@@ -57,17 +77,7 @@ AnimeSR supports both frames and videos as input for inference. We provide sever
 ```bash
 python scripts/inference_animesr_frames.py -i inputs/tom_and_jerry -n AnimeSR_v2 --expname animesr_v2 --save_video_too --fps 20
 ```
-```console
-Usage:
-  -i --input           Input frames folder/root. Support first level dir (i.e., input/*.png) and second level dir (i.e., input/*/*.png)
-  -n --model_name      AnimeSR model name. Default: AnimeSR_v2, can also be AnimeSR_v1-PaperModel
-  -s --outscale        The netscale is x4, but you can achieve arbitrary output scale (e.g., x2 or x1) with the argument outscale.
-                       The program will further perform cheap resize operation after the AnimeSR output. Default: 4
-  -o --output          Output root. Default: results
-  -expname             Identify the name of your current inference. The outputs will be saved in $output/$expname
-  -save_video_too      Save the output frames to video. Default: off
-  -fps                 The fps of the (possible) saved videos. Default: 24
-```
+
 After run the above command, you will get the SR frames in `results/animesr_v2/frames` and the SR video in `results/animesr_v2/videos`.
 
 **Inference on Video**
@@ -79,49 +89,9 @@ CUDA_VISIBLE_DEVICES=0 python scripts/inference_animesr_video.py -i inputs/TheMo
 # multi gpu and multi process inference
 CUDA_VISIBLE_DEVICES=0,1 python scripts/inference_animesr_video.py -i inputs/TheMonkeyKing1965.mp4 -n AnimeSR_v2 -s 4 --expname animesr_v2 --num_process_per_gpu 3 --suffix 2gpu6process
 ```
-```console
-Usage:
-  -i --input           Input video path or extracted frames folder
-  -n --model_name      AnimeSR model name. Default: AnimeSR_v2, can also be AnimeSR_v1-PaperModel
-  -s --outscale        The netscale is x4, but you can achieve arbitrary output scale (e.g., x2 or x1) with the argument outscale.
-                       The program will further perform cheap resize operation after the AnimeSR output. Default: 4
-  -o -output           Output root. Default: results
-  -expname             Identify the name of your current inference. The outputs will be saved in $output/$expname
-  -fps                 The fps of the (possible) saved videos. Default: None
-  -extract_frame_first If input is a video, you can still extract the frames first, other wise AnimeSR will read from stream
-  -num_process_per_gpu Since the slow I/O speed will make GPU utilization not high enough, so as long as the
-                       video memory is sufficient, we recommend placing multiple processes on one GPU to increase the utilization of each GPU.
-                       The total process will be number_process_per_gpu * num_gpu
-  -suffix              You can add a suffix string to the sr video name, for example, 1gpu3processx2 which means the SR video is generated with one GPU and three process and the outscale is x2
-  -half                Use half precision for inference, it won't make big impact on the visual results
-```
+
 SR videos are saved in `results/animesr_v2/videos/$video_name` folder.
 
 If you are looking for portable executable files, you can try our [realesr-animevideov3](https://github.com/xinntao/Real-ESRGAN/blob/master/docs/anime_video_model.md) model which shares the similar technology with AnimeSR.
 
 
-
-## :computer: Training
-See [Training.md](Training.md)
-
-## Request for AVC-Dataset
-1. Download and carefully read the [LICENSE AGREEMENT](assets/LICENSE%20AGREEMENT.pdf) PDF file.
-2. If you understand, acknowledge, and agree to all the terms specified in the [LICENSE AGREEMENT](assets/LICENSE%20AGREEMENT.pdf). Please email `yanzewu@tencent.com` with the **LICENSE AGREEMENT PDF** file, **your name**, and **institution**. We will keep the license and send the download link of AVC dataset to you.
-
-
-## Acknowledgement
-This project is build based on [BasicSR](https://github.com/XPixelGroup/BasicSR).
-
-##  Citation
-If you find this project useful for your research, please consider citing our paper:
-```bibtex
-@InProceedings{wu2022animesr,
-  author={Wu, Yanze and Wang, Xintao and Li, Gen and Shan, Ying},
-  title={AnimeSR: Learning Real-World Super-Resolution Models for Animation Videos},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2022}
-}
-```
-
-## :e-mail: Contact
-If you have any question, please email `yanzewu@tencent.com`.
