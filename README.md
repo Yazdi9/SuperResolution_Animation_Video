@@ -25,22 +25,22 @@ https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3834).png" width="400" height="320">
-<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+<img  src="outputs/outimage/Screenshot (3843).png" width="400" height="320"> 
 </div> 
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3837).png" width="400" height="320">
-<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+<img  src="outputs/outimage/Screenshot (3847).png" width="400" height="320"> 
 </div> 
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3828).png" width="400" height="320">
-<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+<img  src="outputs/outimage/Screenshot (3819).png" width="400" height="320"> 
 </div>
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3831).png" width="400" height="320">
-<img  src="hazy/Dehazed/2a_dehazed.jpg" width="400" height="320"> 
+<img  src="outputs/outimage/Screenshot (3822).png" width="400" height="320"> 
 </div>
 
 ## :wrench: Dependencies and Installation
@@ -92,6 +92,6 @@ CUDA_VISIBLE_DEVICES=0,1 python scripts/inference_animesr_video.py -i inputs/The
 
 SR videos are saved in `results/animesr_v2/videos/$video_name` folder.
 
-If you are looking for portable executable files, you can try our [realesr-animevideov3](https://github.com/xinntao/Real-ESRGAN/blob/master/docs/anime_video_model.md) model which shares the similar technology with AnimeSR.
+
 
 
