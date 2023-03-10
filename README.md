@@ -1,9 +1,9 @@
 # AnimeSR (NeurIPS 2022)
 
-### :open_book: AnimeSR: Learning Real-World Super-Resolution Models for Animation Videos
+###  AnimeSR: Learning Real-World Super-Resolution Models for Animation Videos
 
 > [Yanze Wu](https://github.com/ToTheBeginning), [Xintao Wang](https://xinntao.github.io/), [Gen Li](https://scholar.google.com.hk/citations?user=jBxlX7oAAAAJ), [Ying Shan](https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en) <br>
-> [Tencent ARC Lab](https://arc.tencent.com/en/index); Platform Technologies, Tencent Online Video
+
 
 
 ## Video Demos
