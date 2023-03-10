@@ -1,14 +1,10 @@
 # AnimeSR (NeurIPS 2022)
 
 ### :open_book: AnimeSR: Learning Real-World Super-Resolution Models for Animation Videos
-> [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2206.07038)<br>
+
 > [Yanze Wu](https://github.com/ToTheBeginning), [Xintao Wang](https://xinntao.github.io/), [Gen Li](https://scholar.google.com.hk/citations?user=jBxlX7oAAAAJ), [Ying Shan](https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en) <br>
 > [Tencent ARC Lab](https://arc.tencent.com/en/index); Platform Technologies, Tencent Online Video
 
-
-## Web Demo and API
-
-[![Replicate](https://replicate.com/cjwbw/animesr/badge)](https://replicate.com/cjwbw/animesr) 
 
 ## Video Demos
 
@@ -45,9 +41,9 @@ https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-
 <img  src="outputs/outimage/Screenshot (3822).png" width="400" height="320"> 
 </div>
 
-## wrench: Dependencies and Installation
-- Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
-- [PyTorch >= 1.7](https://pytorch.org/)
+##  Dependencies and Installation
+- Python >= 3.7 
+- PyTorch >= 1.7
 - Other required packages in `requirements.txt`
 
 ### Installation
@@ -68,7 +64,7 @@ https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-
     python setup.py develop
     ```
 
-## zap: Quick Inference
+##  Quick Inference
 Download the pre-trained AnimeSR models [[Google Drive](https://drive.google.com/drive/folders/1gwNTbKLUjt5FlgT6PQQnBz5wFzmNUX8g?usp=share_link)], and put them into the [weights](weights/) folder. Currently, the available pre-trained models are:
 - `AnimeSR_v1-PaperModel.pth`: v1 model, also the paper model. You can use this model for paper results reproducing.
 - `AnimeSR_v2.pth`: v2 model. Compare with v1, this version has better naturalness, fewer artifacts, and better texture/background restoration. If you want better results, use this model.
