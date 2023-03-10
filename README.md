@@ -12,11 +12,13 @@
 
 ## Video Demos
 
+SuperResolution videos stored at outputs/outvideo folder
+
 https://user-images.githubusercontent.com/11482921/204205018-d69e2e51-fbdc-4766-8293-a40ffce3ed25.mp4
 
 https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-8b43-bb479b42dfb6.mp4
 
-## Video Frames Demos(Left:Low Resolution Video Frame  Right:Super Resolution[Desired Output])
+## Video Frames Demos(Left:LowResolution Video Frame(Before)  Right:SuperResolution[Desired Output])
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3835).png" width="400" height="320">
@@ -43,7 +45,7 @@ https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-
 <img  src="outputs/outimage/Screenshot (3822).png" width="400" height="320"> 
 </div>
 
-## :wrench: Dependencies and Installation
+## wrench: Dependencies and Installation
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.7](https://pytorch.org/)
 - Other required packages in `requirements.txt`
@@ -66,7 +68,7 @@ https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-
     python setup.py develop
     ```
 
-## :zap: Quick Inference
+## zap: Quick Inference
 Download the pre-trained AnimeSR models [[Google Drive](https://drive.google.com/drive/folders/1gwNTbKLUjt5FlgT6PQQnBz5wFzmNUX8g?usp=share_link)], and put them into the [weights](weights/) folder. Currently, the available pre-trained models are:
 - `AnimeSR_v1-PaperModel.pth`: v1 model, also the paper model. You can use this model for paper results reproducing.
 - `AnimeSR_v2.pth`: v2 model. Compare with v1, this version has better naturalness, fewer artifacts, and better texture/background restoration. If you want better results, use this model.
