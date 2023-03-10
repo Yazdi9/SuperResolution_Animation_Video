@@ -1,4 +1,3 @@
-# AnimeSR (NeurIPS 2022)
 
 ###  AnimeSR: Learning Real-World Super-Resolution Models for Animation Videos
 
@@ -14,7 +13,7 @@ https://user-images.githubusercontent.com/11482921/204205018-d69e2e51-fbdc-4766-
 
 https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-8b43-bb479b42dfb6.mp4
 
-## Video Frames Demos(Left:LowResolution Video Frame(Before)  Right:SuperResolution[Desired Output])
+## Video Frames Demos(Left:LowResolution Video Frame(Before)  Right:SuperResolution(After))
 
 <div align=center>
 <img  src="inputs/inputimages/Screenshot (3835).png" width="400" height="320">
