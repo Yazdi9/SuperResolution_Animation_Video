@@ -9,7 +9,7 @@
 
 SuperResolution videos stored at outputs/outvideo folder
 
-https://user-images.githubusercontent.com/11482921/204205018-d69e2e51-fbdc-4766-8293-a40ffce3ed25.mp4
+https://mega.nz/fm/A7hBkSqL
 
 https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-8b43-bb479b42dfb6.mp4
 
