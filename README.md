@@ -9,9 +9,12 @@
 
 SuperResolution videos stored at outputs/outvideo folder
 
-https://mega.nz/fm/A7hBkSqL
 
-https://user-images.githubusercontent.com/11482921/204205109-35866094-fa7f-413b-8b43-bb479b42dfb6.mp4
+[MEGA SpongeBob Super Resolution](https://mega.nz/file/965R2bTJ#zHsMeNSgVoAkqnkej9SbhoSTB4aoP196nGBloMRukXo)
+
+[MEGA MonkyFights Super Resolution](https://mega.nz/file/Ju5W2IwT#dn4K5aMP9Gn1l2fIcRvgTPIUNK0ZXp_NmNVtbv3Py8o)
+
+<video src="outputs/outvideo/TheMonkeyKing1965_1gpu1process.mp4"></video>
 
 ## Video Frames Demos(Left:LowResolution Video Frame(Before)  Right:SuperResolution(After))
 
